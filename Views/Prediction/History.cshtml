@@ -45,7 +45,16 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Data</th>
+            <th>Data
+                <a asp-action="History"
+                   asp-route-dataInitiala="@ViewBag.CurrentDataInitiala"
+                   asp-route-dataFinala="@ViewBag.CurrentDataFinala"
+                   asp-route-sortOrder="date_asc">↑</a>
+                <a asp-action="History"
+                   asp-route-dataInitiala="@ViewBag.CurrentDataInitiala"
+                   asp-route-dataFinala="@ViewBag.CurrentDataFinala"
+                   asp-route-sortOrder="date_desc">↓</a>
+            </th>
             <th>Pasageri</th>
             <th>Distanță</th>
             <th>Timp (sec)</th>

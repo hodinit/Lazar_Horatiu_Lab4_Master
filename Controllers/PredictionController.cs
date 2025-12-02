@@ -89,6 +89,8 @@ namespace Lazar_Horatiu_Lab4_Master.Controllers
             {
                 "price_asc" => query.OrderBy(p => p.PredictedPrice),
                 "price_desc" => query.OrderByDescending(p => p.PredictedPrice),
+                "date_asc" => query.OrderBy(p => p.CreatedAt),
+                "date_desc" => query.OrderByDescending(p => p.CreatedAt),
                 _ => query.OrderBy(p => p.PredictedPrice) //sortare default
             };
 
